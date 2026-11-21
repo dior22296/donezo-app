@@ -349,7 +349,7 @@ const views = {
     ['Active Recall', 'Turn each heading from your notes into a question. Answer it without looking and write the part you forgot.'],
     ['Deadline Sprint', 'Write down the next action you can finish in 20 minutes. Set a timer, mute distractions, and start there.']
   ], '<a class="ghost" href="#test">Start a drill</a><a class="ghost" href="#learn">Build a deck</a>'),
-  pricing: () => `<div class="cards">${[['Free','$0'],['Gold','$20'],['Diamond','$50']].map(([name, price]) => '<section class="panel"><h2 class="gold">' + name + '</h2><p class="plan">' + price + '<small> / month</small></p></section>').join('')}</div><section class="panel stack"><h2>Compare original plans</h2><p>For plan details and checkout, open the Pricing tab in the original Donezo. This workspace has no billing.</p></section>`
+  pricing: () => `<div class="cards">${[['Free','$0'],['Gold','$19.99'],['Diamond','$49.99']].map(([name, price]) => '<section class="panel"><h2 class="gold">' + name + '</h2><p class="plan">' + price + '<small> / month</small></p></section>').join('')}</div><section class="panel stack"><h2>Compare original plans</h2><p>For plan details and checkout, open the Pricing tab in the original Donezo. This workspace has no billing.</p></section>`
 };
 const bindings = {
   snap: bindSolver, school: bindSchool, projects: bindProjects, learn: bindLearn, test: bindTest, capture:bindCapture,

@@ -151,10 +151,10 @@ bindings.settings=()=>{
 views.pricing=()=>{
   const plans=[
     ['Free','$0','Start here',['Core tools with daily limits','3 Snap It attempts per day','1 class','Starter cheat codes','1 tutor personality','6 themes','Sample school portal import and local Quiz Battles','1 Voice Tutor session per day']],
-    ['Gold','$20','Everything in Free, plus…',['Unlimited Snap It','Money and Career tracks','Expanded tutor choices','Live school portal sync and Study Rooms (planned)']],
-    ['Diamond','$50','Everything in Gold, plus…',['All 4 Vault tracks','Voice Match','Advanced personalization','Parent Reports and Senior Wing','Unlimited Voice Tutor (planned)']]
+    ['Gold','$19.99','Everything in Free, plus…',['Unlimited Snap It','Money and Career tracks','Expanded tutor choices','Live school portal sync and Study Rooms (planned)']],
+    ['Diamond','$49.99','Everything in Gold, plus…',['All 4 Vault tracks','Voice Match','Advanced personalization','Parent Reports and Senior Wing','Unlimited Voice Tutor (planned)']]
   ];
-  return '<p class="notice">Secure checkout</p><div class="cards">'+plans.map(([name,price,subtitle,perks])=>'<section class="panel"><h2 class="gold">'+name+'</h2><p class="plan">'+price+'<small> / month</small></p><p>'+subtitle+'</p><ul>'+perks.map(perk=>'<li>'+perk+'</li>').join('')+'</ul>'+(name==='Free'?'<a class="ghost" href="#dashboard">Open free workspace</a>':'<a class="primary" href="'+({Gold:'https://buy.stripe.com/cNi7sN6483egaTdg7QbjW0s',Diamond:'https://buy.stripe.com/14A4gB0JOeWYbXhcVEbjW0t'})[name]+'">Choose '+name+'</a>')+'</section>').join('')+'</div>';
+  return '<p class="notice">Secure checkout</p><div class="cards">'+plans.map(([name,price,subtitle,perks])=>'<section class="panel"><h2 class="gold">'+name+'</h2><p class="plan">'+price+'<small> / month</small></p><p>'+subtitle+'</p><ul>'+perks.map(perk=>'<li>'+perk+'</li>').join('')+'</ul>'+(name==='Free'?'<a class="ghost" href="#dashboard">Open free workspace</a>':'<a class="primary" href="'+({Gold:'https://buy.stripe.com/cNi4gB2RW8yA2mH5tcbjW1e',Diamond:'https://buy.stripe.com/14AbJ3csw024d1l3l4bjW1f'})[name]+'">Choose '+name+'</a>')+'</section>').join('')+'</div>';
 };
 const getTasks=()=>read('assignments',[]);
 function dueIn(value) {

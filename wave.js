@@ -110,7 +110,7 @@ const guidance={
   projects:['Projects Wing','Use Projects Wing for science fairs, display boards, presentation scripts, research projects, and project checklists.'],
   school:['School Wing','Open School Wing for algebra steps, website citations, or the sample School Portal import.'],
   capture:['Capture','Record or upload media. Live transcription depends on your browser. For uploaded recordings, paste a transcript and turn it into Cornell notes, flashcards, or assignments.'],
-  pricing:['Compare plans','Free is $0, Gold is $20/month, and Diamond is $50/month. Online upgrades are currently unavailable.'],
+  pricing:['Compare plans','Free is $0, Gold is $19.99/month, and Diamond is $49.99/month. Each paid plan starts with a 3-day free trial at checkout, then bills monthly. Cancel anytime.'],
   dashboard:['Dashboard','Set up a local profile to track your class, XP, streak, Weak-Spot Radar, and tonight’s plan. The profile and activity stay in this browser.'],
   vault:['The Vault','Browse 32 lesson titles across Money, Career, Life Admin, and The Game. The current workspace offers previews. The first two tracks are intended for Gold and all four for Diamond.'],
   codes:['Cheat Codes','Earn XP and unlock study shortcuts for memory, writing, focus, and more.'],
@@ -525,7 +525,7 @@ languageButton.onclick=()=>{if(location.hash==='#rooms')roomCleanup();save('inte
 const oldGuideSubmit=el('#guide-form').onsubmit;
 const guideSpanish=[
   [/propietario|contraseñ|centro de mando/i,'La información privada del propietario no se muestra. Consulta las preguntas frecuentes.','faq'],
-  [/precio|plan|cuesta|suscripci|gold|diamond/i,'Gratis cuesta $0, Gold $20 al mes y Diamond $50 al mes. Los pagos aún no activan funciones en este sitio.','pricing'],
+  [/precio|plan|cuesta|suscripci|gold|diamond/i,'Gratis cuesta $0, Gold $19.99 al mes y Diamond $49.99 al mes. Cada plan pago empieza con 3 días gratis y luego se cobra al mes. Cancela cuando quieras.','pricing'],
   [/examen mañana|prueba mañana|repasar/i,'Abre el modo de repaso y escribe los temas del examen.','cram'],
   [/ciencia|feria|proyecto/i,'En Proyectos encontrarás ideas, materiales y una plantilla para la feria de ciencias.','projects'],
   [/foto|escanear/i,'Abre el escáner, confirma la pregunta y revisa cada paso. El solucionador actual admite álgebra.','snap'],
